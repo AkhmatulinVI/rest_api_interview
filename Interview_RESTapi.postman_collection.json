@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "6e31c744-bd17-4518-b696-9ea45f5bf034",
+		"name": "Interview_RESTapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29254785"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "user2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "user2@ya.ru",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "user123",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/auth/register",
+				"description": "Регистрация нового пользователя"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTI5MTU1NTgsImV4cCI6MTY5MjkxOTE1OCwibmJmIjoxNjkyOTE1NTU4LCJqdGkiOiJVT3ZQTXluMXAzUG50TFZvIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Dw6zTvZ9goN9TQHW-7iovgp-WBMpVAys9WbvylH2Z48"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "user2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "user2@ya.ru",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "user123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "role_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/auth/login",
+				"description": "Логин"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTI5MTU1NTgsImV4cCI6MTY5MjkxOTE1OCwibmJmIjoxNjkyOTE1NTU4LCJqdGkiOiJVT3ZQTXluMXAzUG50TFZvIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Dw6zTvZ9goN9TQHW-7iovgp-WBMpVAys9WbvylH2Z48"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "user2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "user2@ya.ru",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "user123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "role_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/auth/logout",
+				"description": "Логаут"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/store",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MjcyMjA3MCwiZXhwIjoxNjkyNzI1ODY5LCJuYmYiOjE2OTI3MjIyNjksImp0aSI6IktXb1MydUFpZEtDZ3JTbmkiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.PaaGpka1EXsvhxJK1f9SLXPYgA2MJcGLyIlOA3_JJ4I"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "admin@mail.ru",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "admin123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "role_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "topic",
+							"value": "top test53",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "mes test53",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/user/store",
+				"description": "Создание заявки пользователем"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/show/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/user/show/2",
+				"description": "получение пользоваетелем заявок созданных им"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/get_status/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/user/get_status/3",
+				"description": "Получение статуса конкретной заявки"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/admin/index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/admin/index",
+				"description": "Получение администратором всех заявок"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/admin/update/4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment",
+							"value": "ez",
+							"type": "text"
+						},
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/admin/update/4",
+				"description": "Редактирование администратором заявки: добавление комментария, изменение статуса."
+			},
+			"response": []
+		}
+	]
+}
